@@ -5,7 +5,7 @@
     %alias_string%
     ServerAdmin %email%
     # change this path with sed
-    DocumentRoot %sdocroot%/backend/web
+    DocumentRoot %docroot%/backend/web
     ScriptAlias /cgi-bin/ %home%/%user%/web/%domain%/cgi-bin/
     Alias /vstats/ %home%/%user%/web/%domain%/stats/
     Alias /error/ %home%/%user%/web/%domain%/document_errors/
@@ -14,7 +14,7 @@
     CustomLog /var/log/%web_system%/domains/%domain%.log combined
     ErrorLog /var/log/%web_system%/domains/%domain%.error.log
     # change this path with sed
-    <Directory %sdocroot%>
+    <Directory %docroot%>
         AllowOverride All
         Options +Includes -Indexes +ExecCGI
     </Directory>
@@ -31,6 +31,5 @@
         AssignUserID %user% %group%
     </IfModule>
 
-    Include %home%/%user%/conf/web/%web_system%.%domain%.conf*
-    
 </VirtualHost>
+

@@ -46,7 +46,7 @@ example.com
 backend.example.com
 
 После этого в Vesta CP вы можете отредактировать настройки доменов и устновить шаблоны:
-yii2-frontend для example.com и yii2-backend для backend.example.com
+yii2-frontend для example.com and yii2-backend для backend.example.com
 
 
 (3)

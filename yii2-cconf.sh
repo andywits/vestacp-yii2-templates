@@ -10,6 +10,9 @@ DOMAIN=$2
 
 mkdir -p /home/$USER/web/$DOMAIN/public_html/frontend/web
 mkdir -p /home/$USER/web/$DOMAIN/public_html/backend/web
+mkdir -p /home/$USER/web/$DOMAIN/public_shtml/frontend/web
+mkdir -p /home/$USER/web/$DOMAIN/public_shtml/backend/web
+
 
 ARR_CONF+=(
 nginx
